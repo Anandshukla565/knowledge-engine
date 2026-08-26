@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: knowledge-engine-api
+    runtime: python
+    buildCommand: pip install --no-cache-dir -e .
+    startCommand: python -m knowledge_engine api --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true

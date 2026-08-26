@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "knowledge-engine-runtime"
+version = "0.1.0"
+description = "Local architect-facing floor-plan planning and review runtime."
+readme = "README_END_USER.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.0",
+  "shapely>=2.0",
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "gradio>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+]
+
+[project.scripts]
+knowledge-engine = "knowledge_engine.apps.cli.entrypoint:main"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = { knowledge_engine = "." }
+packages = [
+  "knowledge_engine",
+  "knowledge_engine.ai",
+  "knowledge_engine.apps",
+  "knowledge_engine.apps.api",
+  "knowledge_engine.apps.cli",
+  "knowledge_engine.apps.web",
+  "knowledge_engine.autopilot",
+  "knowledge_engine.domain",
+  "knowledge_engine.infrastructure",
+  "knowledge_engine.intake",
+  "knowledge_engine.knowledge",
+  "knowledge_engine.planning",
+  "knowledge_engine.reports",
+  "knowledge_engine.suggestions",
+  "knowledge_engine.validation",
+]
+
+[tool.setuptools.package-data]
+knowledge_engine = ["samples/*.json"]

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "authorized": true,
+  "max_tasks_per_run": 3,
+  "stop_on_failure": true,
+  "tasks": [
+    {
+      "id": "architecture_check",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "mirror_tests",
+      "status": "COMPLETE"
+    },
+    {
+      "id": "planner_smoke",
+      "status": "COMPLETE"
+    }
+  ]
+}

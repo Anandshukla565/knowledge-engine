@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+*.md
+!README.md
+deploy/
+knowledge_engine_runtime.egg-info/
+outputs/
+reports/
+samples/
+suggestions/
