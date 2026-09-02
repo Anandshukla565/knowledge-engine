@@ -4,9 +4,9 @@
     {
       "name": "Knowledge Engine API",
       "runtimeExecutable": "C:/Users/HP/AppData/Local/Programs/Python/Python314/python.exe",
-      "runtimeArgs": ["-m", "knowledge_engine", "api", "--host", "127.0.0.1", "--port", "8765"],
-      "port": 8765,
-      "url": "http://127.0.0.1:8765"
+      "runtimeArgs": ["-m", "knowledge_engine", "api", "--host", "127.0.0.1", "--port", "8766"],
+      "port": 8766,
+      "url": "http://127.0.0.1:8766"
     }
   ]
 }
